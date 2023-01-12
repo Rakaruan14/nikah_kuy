@@ -1,0 +1,240 @@
+/* untuk global */
+/*margin*/
+.main-biru{
+    background-color: #003566;
+    color: #FFF;
+}
+.main-biru h2 span{
+    color: #FFC300;
+}
+
+h2.main-judul::after{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border-bottom: 10px solid #FFC300;
+    width: 100px;
+    border-radius: 25px;
+    content: "";
+}
+.mian-grey{
+    background-color: #F9F9F9;
+}
+.main-atas-judul{
+    color: #999;
+    font-size: 22px;
+    font-weight: 600;
+}
+/* background */
+.bg{
+    background-color: #001D3D;
+    opacity: 50%;
+}
+
+#demo h1 span{
+    color: red;
+}
+
+/*tombol*/
+a:hover{
+    transition: color 0.5s ease;
+}
+
+/* header */
+.main-nav{
+    background-color: #003566;
+}
+.main-nav .navbar-nav a.nav-link{
+    color: #FFF;
+    font-weight: 600;
+}
+.main-nav .navbar-nav .nav-link.active, .main-nav .navbar-nav .nav-link:hover {
+    color: #FFC300;
+}
+.navbar.scrolled{
+    background-color: #FFF;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px -10px 30px #666;
+}
+.navbar.scrolled a.nav-link{
+    color: #666;
+}
+.navbar img.main-logo{
+    max-width: 150px;
+}
+.navbar-brand{
+    font-weight: 650;
+}
+
+/* dropdown */
+.dropdown-menu.scrolled{
+    background-color: #FFF;
+    transition: background-color 0.5s ease;
+}
+.dropdown-menu.scrolled a.dropdown-item{
+    color: #666;
+}
+.dropdown-menu.scrolled a.dropdown-item:hover{
+    background-color: #F9F9F9;
+    color: #FFC300;
+}
+.dropdown-item:hover{
+    background-color: #003566;
+    color: #FFC300;
+}
+.dropdown-item{
+    font-weight: 500;
+}
+.biru{
+    background-color: #001D3D;
+}
+.biru2{
+    color: #FFF;
+}
+
+/* slider */
+#slider h2{
+    padding-bottom: 5px;
+}
+#slider a{
+    font-weight: 500;
+}
+#slider img{
+    width: 100%;
+}
+.carousel-item{
+    height: 450px;
+    transition: transform 1s ease, opacity 0.5s ease-out;
+}
+
+/* our service */
+#ourservice{
+    overflow: hidden;
+}
+.judul{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+/* pricelist */
+#pricelist .col-sm-6:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+#pricelist .row{
+    color: #001D3D;
+}
+#pricelist h1{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#pricelist h4{
+    color: #1989f1;
+}
+
+/* theme */
+#theme .btn-warning:hover,
+#theme .btn-primary:hover{
+    text-decoration: underline;
+}
+#theme h5{
+    padding-bottom: 0.5rem;
+}
+
+/* footer */
+.main-footer-menu h3{
+    color: #ccc;
+    margin-bottom: 15px;
+}
+.main-footer-menu a{
+    color: #FFF;
+    text-decoration: none;
+}
+.main-footer-menu a:hover{
+    color: #FFC300;
+}
+.main-footer-menu ul{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.main-footer-menu ul li{
+    margin-bottom: 10px;
+}
+.main-footer-copyright{
+    background-color: #001D3D;
+    color: #FFF;
+}
+#contactus li img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+#contactus span{ 
+    margin-left: 40px; 
+}
+#contactus span1{
+    margin-left: 14px;
+}
+#contactus span2{
+    margin-left: 8px;
+}
+#contactus span3{
+    margin-left: 5px;
+}
+
+
+
+/******************************************
+	    MEDIA QUERIES ( Responsive )
+*******************************************/
+@media screen and (min-width:1081px){
+    .text-only{
+        padding-bottom: 140px;
+    }
+    .text-gambar{
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    #slider img{
+        width: 70%;
+    }
+    .carousel-caption{
+        align-self: center;
+    }
+    .carousel-item{
+        height: 350px;
+    }
+    .text-only{
+        padding-bottom: 90px;
+    }
+    .text-gambar{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #slider img{
+        width: 100%;
+    }
+    .carousel-caption{
+        padding-bottom: 40px;
+    }
+    .carousel-item{
+        height: 550px;
+    }
+    .text-only{
+        padding-bottom: 160px;
+    }
+    .pb-img{
+        padding-bottom: 30px;
+    }
+    .bg{
+        height: 100%;
+        width: auto;
+    }
+}
