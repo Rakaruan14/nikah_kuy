@@ -1,0 +1,1 @@
+# YOK NIKAH YOK
